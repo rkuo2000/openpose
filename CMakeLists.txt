@@ -19,9 +19,9 @@ if (${CMAKE_VERSION} VERSION_GREATER 3.9.0)
   project(OpenPose VERSION ${OpenPose_VERSION})
   # # Not tested
   # cmake_policy(SET CMP0048 NEW)
-  # set(CUDACXX /usr/local/cuda/bin/nvcc)
-  # project(OpenPose VERSION ${OpenPose_VERSION} LANGUAGES CXX CUDA)
-  # set(AUTO_FOUND_CUDA TRUE)
+  set(CUDACXX /usr/local/cuda/bin/nvcc)
+  project(OpenPose VERSION ${OpenPose_VERSION} LANGUAGES CXX CUDA)
+  set(AUTO_FOUND_CUDA TRUE)
   # # else
   # set(AUTO_FOUND_CUDA FALSE)
 # Ubuntu 16 default
